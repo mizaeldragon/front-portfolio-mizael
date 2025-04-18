@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import coffeImg from "../../assets/img/coffe-img.webp";
+import blogImg from "../../assets/img/img-blog.webp";
 import lpIsa from "../../assets/img/lpIsa.webp";
 import bgCardapio from "../../assets/img/bg-cardapio.webp";
 import lpAdv from "../../assets/img/p-1.webp";
@@ -63,14 +63,14 @@ const projects = [
   },
   {
     id: 5,
-    title: "Grão & Aroma",
-    description: "Landing page de apresentação para uma cafeteria.",
+    title: "Blog-Filmes",
+    description: "Landing page de apresentação de um blog sobre noticias de filmes.",
     technologies: [
       <FaHtml5 className="w-16 h-16 text-orange-500 animate-grow-ShrinkButton" />,
       <FaCss3Alt className="w-16 h-16 animate-grow-ShrinkButton" />,
     ],
-    image: coffeImg,
-    link: "https://mizaeldragon.github.io/coffe/",
+    image: blogImg,
+    link: "https://blog-noticia-filmes.vercel.app/",
   },
 ];
 
