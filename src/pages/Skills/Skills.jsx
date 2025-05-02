@@ -10,6 +10,7 @@ import twL from "../../assets/img/tw-logo.webp";
 import ffL from "../../assets/img/ff-logo.webp";
 import exL from "../../assets/img/ex-logo.webp";
 import { CarouselMobile } from "@/components/CarouselMobile";
+import ptgsql from "../../assets/img/postgresql.webp"
 
 export function Skills() {
   return (
@@ -89,6 +90,16 @@ export function Skills() {
                   alt="MySQL logo"
                 />
                 MYSQL
+              </div>
+            </div>
+            <div>
+              <div className="flex flex-col gap-8 justify-center items-center mt-24 reveal">
+                <img
+                  className="size-28 animate-grow-shrink"
+                  src={ptgsql}
+                  alt="postgreSQL logo"
+                />
+                POSTGRESQL
               </div>
             </div>
             <div>
