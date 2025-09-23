@@ -4,13 +4,30 @@ import lpIsa from "../../assets/img/lpIsa.webp";
 import bgCardapio from "../../assets/img/bg-cardapio.webp";
 import lpAdv from "../../assets/img/p-1.webp";
 import authUser from "../../assets/img/auth-user.webp";
+import mogImg from "../../assets/img/mognet.png";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FaCss3Alt, FaHtml5, FaNodeJs, FaKey } from "react-icons/fa";
+import { FaCss3Alt, FaHtml5, FaNodeJs, FaKey, FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiShadcnui } from "react-icons/si";
 import { SiJavascript, SiPrisma, SiMongodb } from "react-icons/si";
 
 const projects = [
-  {
+
+   {
     id: 1,
+    title: "Mognet",
+    description: "Landing page de apresentação de uma empresa de internet.",
+    technologies: [
+      <FaReact className="w-16 h-16 text-blue-600 animate-grow-ShrinkButton" />,
+      <RiTailwindCssFill className="w-16 h-16 animate-grow-ShrinkButton" />,
+      <SiShadcnui className="w-14 h-14 text-white animate-grow-ShrinkButton" />,
+    ],
+    image: mogImg,
+    link: "https://single-pages-mognet.wekutu.easypanel.host/",
+  },
+
+  {
+    id: 2,
     title: "SmashPoint",
     description: "Cardápio online para hamburguerias, restaurantes e pizzarias",
     technologies: [
@@ -22,7 +39,7 @@ const projects = [
     link: "https://cardapio-online-coral.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Isa Micropigmentações",
     description:
       "Landing page para apresentar os serviços de micropigmentação.",
@@ -35,7 +52,7 @@ const projects = [
     link: "https://mizaeldragon.github.io/isa-micropigmentacao/",
   },
   {
-    id: 3,
+    id: 4,
     title: "API de Autenticação",
     description:
       "Este projeto é uma API simples para cadastro, autenticação e listagem de usuários.",
@@ -49,7 +66,7 @@ const projects = [
     link: "https://github.com/mizaeldragon/autenticacao-usuario",
   },
   {
-    id: 4,
+    id: 5,
     title: "Veritas Advocacia",
     description:
       "Landing page para advogados com foco em captar clientes online.",
@@ -62,7 +79,7 @@ const projects = [
     link: "https://landing-page-advogado.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Blog-Filmes",
     description: "Landing page de apresentação de um blog sobre noticias de filmes.",
     technologies: [
