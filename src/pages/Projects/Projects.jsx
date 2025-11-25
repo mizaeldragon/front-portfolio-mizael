@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import blogImg from "../../assets/img/img-blog.webp";
 import lpIsa from "../../assets/img/lpIsa.webp";
 import bgCardapio from "../../assets/img/bg-cardapio.webp";
-import lpAdv from "../../assets/img/p-1.webp";
+import lpJE from "../../assets/img/lpJE.webp";
 import authUser from "../../assets/img/auth-user.webp";
 import mogImg from "../../assets/img/mognet.png";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -40,6 +40,19 @@ const projects = [
   },
   {
     id: 3,
+    title: "JE Internet",
+    description:
+      "Landing page para serviços de internet.",
+    technologies: [
+      <FaReact className="w-16 h-16 text-blue-600 animate-grow-ShrinkButton" />,
+      <RiTailwindCssFill className="w-16 h-16 animate-grow-ShrinkButton" />,
+      <SiShadcnui className="w-14 h-14 text-white animate-grow-ShrinkButton" />,
+    ],
+    image: lpJE,
+    link: "https://site.jeinternet.com.br/",
+  },
+  {
+    id: 4,
     title: "Isa Micropigmentações",
     description:
       "Landing page para apresentar os serviços de micropigmentação.",
@@ -52,7 +65,7 @@ const projects = [
     link: "https://mizaeldragon.github.io/isa-micropigmentacao/",
   },
   {
-    id: 4,
+    id: 5,
     title: "API de Autenticação",
     description:
       "Este projeto é uma API simples para cadastro, autenticação e listagem de usuários.",
@@ -64,19 +77,6 @@ const projects = [
     ],
     image: authUser,
     link: "https://github.com/mizaeldragon/autenticacao-usuario",
-  },
-  {
-    id: 5,
-    title: "Veritas Advocacia",
-    description:
-      "Landing page para advogados com foco em captar clientes online.",
-    technologies: [
-      <FaHtml5 className="w-16 h-16 text-orange-500 animate-grow-ShrinkButton" />,
-      <FaCss3Alt className="w-16 h-16 animate-grow-ShrinkButton" />,
-      <SiJavascript className="w-14 h-14 text-yellow-400 mt-1 animate-grow-ShrinkButton" />,
-    ],
-    image: lpAdv,
-    link: "https://landing-page-advogado.vercel.app/",
   },
   {
     id: 6,
